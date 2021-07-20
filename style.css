@@ -1,0 +1,476 @@
+*{
+    box-sizing: border-box;
+}
+/*
+@font-face {
+    font-family: 'earth_orbiterregular';
+    src: url('font/earth/earthorbiter-webfont.woff2') format('woff2'),
+         url('font/earth/earthorbiter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face{
+
+    font-family: 'electroharmonixregular';
+    src: url('font/kit_electroharmonix/electroharmonix-webfont.woff2') format('woff2'),
+         url('font/kit_electroharmonix/electroharmonix-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('font/Geo_Sans_Light/geosanslight-webfont.woff2') format('woff2'),
+         url('font/Geo_Sans_Light/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}/*
+@font-face {
+    font-family: 'inversionzregular';
+    src: url('font/inversionz/inversionz_kit/inversionz-webfont.woff2') format('woff2'),
+         url('font/inversionz/inversionz_kit/inversionz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rcdemo';
+    src: url('font/R&C/rc-demo-webfont.woff2') format('woff2'),
+         url('font/R&C/rc-demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'android_101regular';
+    src: url('font/android_101/android_101-webfont.woff2') format('woff2'),
+         url('font/android_101/android_101-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'squared_displayregular';
+    src: url('font/squared_display/squared_display-webfont.woff2') format('woff2'),
+         url('font/squared_display/squared_display-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cuberegular';
+    src: url('font/Cube/cube-webfont.woff2') format('woff2'),
+         url('font/Cube/cube-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@keyframes opaciter{
+    from {opacity:30%}
+    to {opacity:90%}
+}
+body{
+    margin: 0;
+    padding: 8px;
+    background-color: black;
+}
+
+.firstpage{
+    background-color: rgb(255, 255, 255);
+  background-color: rgb(221, 235, 233);
+    margin:0;
+    outline: solid 10px rgb(221, 235, 233);
+    /*outline: solid 10px rgb(255, 255, 255);*/
+    perspective: 2000px;
+    mix-blend-mode: hue;
+    background-blend-mode: hue;
+}
+.firstpage.active{
+    background-color: rgb(221, 235, 233);
+    margin:0;
+    outline: solid 40px rgb(221, 235, 233);
+    animation: disapear 0s 6.95s forwards;
+}
+@keyframes disapear {
+    from{opacity:100%;
+        background-color: rgb(221, 235, 233);
+        outline: solid 40px rgb(221, 235, 233);}
+    to{opacity:0%;
+        background-color: rgb(0, 0, 0);
+        outline: solid 40px rgb(0, 0, 0);}
+}
+.conteneur{
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    height: 875px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    perspective: 2000px;
+   /* transform: scale(1.067);*/
+    transform: translateZ(128px);
+    overflow: hidden;
+}
+
+.ranger1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1500px;
+    height: 250px;
+}
+.superranger{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width:1500px;
+    height: 250px;
+}
+.ranger2{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+}
+/*
+.central{
+    width:500px;
+    height:250px;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    background: rgb(15, 13, 22);
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(45, 57, 82, 0.5),rgba(101, 111, 168, 0.5),rgba(43, 55, 82, 0.5), black),
+  rgb(17, 19, 31);
+  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(38, 53, 83, 0.5),rgba(72, 103, 175, 0.5),rgba(39, 52, 83, 0.5), black),
+  rgb(17, 20, 34);
+  background-image:url(img/fond_montagne.jpg);
+  background-image:url(img/Central_background_Noir.jpg);
+  background-size: cover;
+    text-align: center;
+    border: inset 5px rgb(197, 197, 197);
+    border: inset 5px rgb(41, 41, 41);
+    box-shadow: inset 1px 1px 15px rgba(0,0,0,0.2);
+    z-index: 3;
+    transition: all 1s;
+}*/
+.central{
+    width:500px;
+    height:250px;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    background: rgb(15, 13, 22);
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(45, 57, 82, 0.5),rgba(101, 111, 168, 0.5),rgba(43, 55, 82, 0.5), black),
+  rgb(17, 19, 31);
+  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(38, 53, 83, 0.5),rgba(72, 103, 175, 0.5),rgba(39, 52, 83, 0.5), black),
+  rgb(17, 20, 34);
+  background-image:url(img/Central_background12.jpg);
+ /* background-image:url(img/Central_background_Noir.jpg);*/
+  background-size: cover;
+    text-align: center;
+    border: inset 5px rgb(197, 197, 197);
+    border: inset 5px rgb(41, 41, 41);
+    border: inset 5px rgb(27, 38, 39);
+    border: inset 5px rgb(14, 20, 20);
+   /* border: inset 5px rgb(51, 73, 75);*/
+    box-shadow: inset 1px 1px 15px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 15px rgba(0,0,0,0.6);
+
+    z-index: 3;
+    transition: all 1s;
+}
+.central:hover{
+  /* box-shadow: inset 1px 15px 100px -30px rgba(21, 30, 47, 0.6);*/
+  box-shadow: inset 1px 15px 100px -30px rgba(84, 215, 255, 0.5);
+  box-shadow: inset 1px 15px 100px -30px rgba(73, 170, 187, 0.5);
+  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(45, 57, 82, 0.5),rgba(101, 111, 168, 0.5),rgba(43, 55, 82, 0.5), black),
+  rgb(17, 19, 31);
+  background-image:url(img/Central_background8.jpg);
+  background-size: cover;
+  /*  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(62, 90, 151, 0.5),rgba(145, 161, 255, 0.5),rgba(62, 90, 151, 0.5), black),
+  rgb(27, 31, 63);
+  background: linear-gradient(rgba(0, 0, 0,0.5), rgba(57, 75, 112, 0.5),rgba(123, 139, 219, 0.5),rgba(69, 86, 124, 0.5), black),
+  rgb(39, 43, 78);*/
+
+   transition: all 0.5s;
+}
+.flou{
+    background: radial-gradient(rgba(49, 104, 255, 0.5),rgba(1, 60, 255, 0.2),rgba(1, 60, 255, 0.05), rgba(0,0,0,0)35%);
+    background: radial-gradient(rgba(49, 197, 255, 0.5),rgba(1, 183, 255, 0.2),rgba(1, 204, 255, 0.05), rgba(0,0,0,0)35%);
+    mix-blend-mode: screen;
+    width: 1px;
+    height: 1px;
+    box-shadow:1px 1px 2000px 250px/* rgba(0, 81, 255,0.5)*/ #27365a;
+    box-shadow:1px 1px 2000px 250px/* rgba(0, 81, 255,0.5)*/ #27465a;
+    border-radius: 500px;
+    position: absolute;
+    top:350px;
+    left: 780px;
+    /*z-index: 0;*/
+}
+
+.central.active{
+    background-image:url(img/Central_background8.jpg);
+    animation: anim 0.8s ease-in-out forwards, chutecentrala 1s 6s ease-in forwards;
+    box-shadow: inset 1px 15px 100px -30px rgba(91, 196, 204, 0.6);
+}
+
+    @keyframes anim{
+        0% {transform: translateZ(0px ) scale(1.0);
+            z-index: 10;}
+    
+   25%{transform: translateZ(-200px ) scale(1.05);
+       background-color: white;}
+    
+       50%{transform: translateZ(100px) scale(0.97);}
+
+   75%{transform: translateZ(0px ) scale(1.0)}
+    
+        100%{transform: translateZ(0) scale(1.0);
+        z-index:10 ;}
+        }
+
+        @keyframes chutecentral{
+                0% {z-index: 4;}
+                70%{/*background-color: white;*/
+                    background: rgb(15, 13, 22);}
+                100%{transform: translateZ(1995px);
+                      z-index: 10;}
+                }
+
+                @keyframes chutecentrala{
+                    0% {transform: translateZ(0px);}
+                    70%{background-color: rgb(15, 13, 22);}
+                    100% {transform: translateZ(1920px) translateY(0) rotateY(0.5turn) rotateX(1turn);
+                          opacity:100%;
+                          background-color: black;}
+                }
+ 
+.ranger3{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+}
+
+.ranger4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1500px;
+    height:375px;
+}
+
+.panel{
+    width:125px;
+    height:125px;
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(27, 33, 51);
+    background-color: rgb(17, 20, 27);
+    background-color: rgb(5, 5, 5);
+   /* background-image:url(img/pannel2.jpg) ;*/
+    background-size: cover;
+   /* background-color: rgb(0, 0, 0);*/
+    transition: all 3s;
+    transform: scale(1.02);
+    z-index: 1;
+    /*will-change: transform;*/
+}
+
+.panel:hover{
+    transform: translateZ(50px);
+  /*  background-color: rgb(255, 255, 255);
+    background-color: rgb(18, 22, 34);
+    background-color: rgb(14, 15, 19);*/
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 30px rgba(0, 195, 255, 0.4);
+    box-shadow: 5px 5px 30px rgba(148, 230, 255, 0.5);
+   /* box-shadow: 5px 5px 75px -15px rgba(148, 230, 255, 0.3);*/
+    box-shadow: 5px 5px 60px -12px rgba(148, 230, 255, 0.5);
+   /* box-shadow: 5px 5px 30px #27465a;*/
+    transition: all 0.2s;
+    z-index: 2;
+}
+.panel.active:hover{
+    box-shadow: none;
+    background-color: rgb(27, 33, 51); ;
+}
+      
+    .active.a{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 4.8s ease-in forwards;}
+    .active.b{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.4s ease-in forwards;}  
+    .active.c{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.56s ease-in forwards;}
+    .active.d{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.5s ease-in forwards;}
+    .active.e{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.95s ease-in forwards;}
+    .active.f{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.3s ease-in forwards;}
+    .active.g{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.47s ease-in forwards;}
+    .active.h{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.2s ease-in forwards;}
+    .active.i{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.6s ease-in forwards;}
+    .active.j{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.7s ease-in forwards;}
+    .active.k{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.9s ease-in forwards;}
+    .active.l{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.4s ease-in forwards;}
+    .active.m{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.3s ease-in forwards;}
+    .active.o{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.5s ease-in forwards;}
+    .active.p{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.8s ease-in forwards;}
+    .active.q{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.35s ease-in forwards;}
+    .active.r{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.4s ease-in forwards;}
+    .active.s{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.5s ease-in forwards;}
+    .active.t{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 4.7s ease-in forwards;}
+    .active.u{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.74s ease-in forwards;}
+    .active.v{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.71s ease-in forwards;}
+    .active.w{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 3s ease-in forwards;}
+    .active.x{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.23s ease-in forwards;}
+    .active.y{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.24s ease-in forwards;}
+    .active.z{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.49s ease-in forwards;}
+    .active.ab{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 2.2s ease-in forwards;}
+    .active.bb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.84s ease-in forwards;}
+    .active.cb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.9s ease-in forwards;}
+    .active.db{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 4.66s ease-in forwards;}
+    .active.eb{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.88s ease-in forwards;}
+    .active.fb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.51s ease-in forwards;}
+    .active.gb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.9s ease-in forwards;}
+    .active.hb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.49s ease-in forwards;}
+    .active.ib{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.84s ease-in forwards;}
+    .active.jb{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5s ease-in forwards;}
+    .active.kb{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.29s ease-in forwards;}
+    .active.lb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.2s ease-in forwards;}
+    .active.mb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5s ease-in forwards;}
+    .active.nb{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.81s ease-in forwards;}
+    .active.ob{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.7s ease-in forwards;}
+    .active.pb{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.85s ease-in forwards;}
+    .active.qb{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.4s ease-in forwards;}
+    .active.rb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.39s ease-in forwards;}
+    .active.sb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.3s ease-in forwards;}
+    .active.tb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.32s ease-in forwards;}
+    .active.ub{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 4.3s ease-in forwards;}
+    .active.vb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 5.1s ease-in forwards;}
+    .active.wb{animation: animpanel 1.5s 0s ease-in-out forwards, chute 1.3s 4.1s ease-in forwards;}
+    .active.xb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.4s ease-in forwards;}
+    .active.yb{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 3.75s ease-in forwards;}
+    .active.zb{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.54s ease-in forwards;}
+    .active.ac{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.57s ease-in forwards;}
+    .active.bc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 4.29s ease-in forwards;}
+    .active.cc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.8s ease-in forwards;}
+    .active.dc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 3.94s ease-in forwards;}
+    .active.ec{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.78s ease-in forwards;}
+    .active.fc{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.66s ease-in forwards;}
+    .active.gc{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 4.9s ease-in forwards;}
+    .active.hc{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.29s ease-in forwards;}
+    .active.ic{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.48s ease-in forwards;}
+    .active.jc{animation: animpanel 1.5s 0.1s ease-in-out forwards, chute 1.3s 5.12s ease-in forwards;}
+    .active.kc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.8s ease-in forwards;}
+    .active.lc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.24s ease-in forwards;}
+    .active.mc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.5s ease-in forwards;}
+    .active.nc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.9s ease-in forwards;}
+    .active.oc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.5s ease-in forwards;}
+    .active.pc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.19s ease-in forwards;}
+    .active.qc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.5s ease-in forwards;}
+    .active.rc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.47s ease-in forwards;}
+    .active.sc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.8s ease-in forwards;}
+    .active.tc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.56s ease-in forwards;}
+    .active.uc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.9s ease-in forwards;}
+    .active.vc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 4.66s ease-in forwards;}
+    .active.wc{animation: animpanel 1.5s 0.2s ease-in-out forwards, chute 1.3s 5.3s ease-in forwards;}
+    .active.xc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.4s ease-in forwards;} 
+    .active.yc{animation: animpanel 1.5s 0.3s ease-in-out forwards, chute 1.3s 5.61s ease-in forwards;}
+
+@keyframes animpanel{
+    0% {transform: translateZ(0) scale(1.01);
+        z-index: 3}
+
+    25% {transform: translateZ(200px) scale(0.95);
+        background-color:white;
+         z-index: 9;}
+
+    50% {transform: translateZ(-100px) scale(1.05);}
+
+    75%{transform: translateZ(50px) scale(0.97);
+        z-index: 2;}
+
+    100%{transform: translateZ(0) scale(1.01);
+        box-shadow:0px 5px rgba(0, 0, 0, 0.0);
+        z-index: 2;}
+    }
+
+    @keyframes chute{
+        0% {transform: translateZ(0px);}
+        15% {
+            background-color: rgb(5, 5, 5); ;}
+        100% {transform: translateZ(2000px) rotateY(1turn) rotateX(2turn);
+              opacity:100%;
+              background-color: rgb(0, 0, 0);
+             }
+    }
+   
+
+.mainpage{
+    width:0%;
+    height:0%;
+   position: absolute;
+    top:0px;
+    opacity:0%;
+    color: green;
+}
+
+.mainpage.active{
+  /*  display: flex;*/
+  /*  flex-flow: wrap;
+    justify-content: center;*/
+    top:0px;
+    transition:opacity 2s 8s;
+    opacity: 100%;
+    background-color:rgb(0, 0, 0);
+    width: 1559px;
+    height:913px;
+    margin:0px;
+    margin-left: 12px;
+    padding:0px;
+}
+.line{
+    background:white;
+    animation: line 2s 10s forwards;
+    position: absolute;
+    left: 200px;
+}
+@keyframes line{
+    0%{width:0px;
+       height:0px}
+    50%{width:2px;
+         height:200px;} 
+         100%{width:2px;
+              height:-200px}  
+} 
+/*
+.banniere{
+    width: 100%;
+    height: 20%;
+    background-image:url(img/Banniere.jpg);
+    background-size: cover;
+    background-color: white;
+}
+.topbar{
+    color: white;
+    font-family:'geosanslightregular', sans-serif;
+    font-size: 22px;
+    display:flex;
+    justify-content: space-around;
+    height: 40px;
+    width:1559px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    padding:10px;
+}
+
+.link:hover{
+    background-color: white;
+    color: black;
+
+}
